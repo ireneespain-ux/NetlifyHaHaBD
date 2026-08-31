@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ha Ha's bilingual birthday guestbook">
+  <title>Ha Ha's Birthday Guestbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-scroll">
+  <div class="welcome-modal" id="welcomeModal" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <div class="confetti" aria-hidden="true">
+      <i>✦</i><i>♡</i><i>•</i><i>✦</i><i>•</i><i>♡</i><i>✦</i><i>•</i>
+    </div>
+    <div class="welcome-card">
+      <div class="cake" aria-hidden="true">🎂</div>
+      <p class="eyebrow">1 September · 1 tháng 9</p>
+      <h1 id="welcomeTitle">Today is Ha Ha&apos;s birthday!</h1>
+      <p>Welcome to my little birthday corner.<br><span>Chào mừng bạn đến với góc sinh nhật nhỏ của Ha Ha.</span></p>
+      <button class="primary-button" id="openPageButton">Open the birthday surprise ✨<small>Mở điều bất ngờ sinh nhật</small></button>
+      <div class="party-icons" aria-hidden="true">🎈　🎁　🧁　🎉　🥳</div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="floating-sticker sticker-one">🎂</div>
+    <div class="floating-sticker sticker-two">🎈</div>
+    <div class="floating-sticker sticker-three">🧁</div>
+    <div class="hero-copy">
+      <p class="eyebrow">A little birthday time capsule · Chiếc hộp ký ức sinh nhật</p>
+      <h1>Leave a little piece of our story ♡</h1>
+      <p>Hi, it&apos;s Ha Ha! Today, 1 September, is my birthday. Instead of a present, I&apos;d love a memory from you—something sweet, funny, or completely unexpected.</p>
+      <p class="vi">Xin chào, Ha Ha đây! Hôm nay, ngày 1 tháng 9, là sinh nhật của mình. Thay vì một món quà, mình muốn nhận một kỷ niệm từ bạn.</p>
+      <a class="text-link" href="#quiz"><span>Take the quiz</span><small>Làm quiz vui</small><b aria-hidden="true">↓</b></a>
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll to continue</span><small>Cuộn xuống để tiếp tục</small><b>⌄</b></div>
+    </div>
+
+    <div class="scrapbook" aria-label="Ha Ha's five-photo wall">
+      <span class="paper-shape shape-one"></span>
+      <span class="paper-shape shape-two"></span>
+      <div class="polaroid photo-a"><span class="tape tape-pink"></span><img src="images/photo-1.jpg" alt="Ha Ha birthday photo placeholder 1"><em>birthday girl ♡</em></div>
+      <div class="polaroid photo-b"><span class="tape tape-orange"></span><img src="images/photo-2.jpg" alt="Ha Ha birthday photo placeholder 2"><em>little moments</em></div>
+      <div class="polaroid photo-c"><span class="tape tape-blue"></span><img src="images/photo-3.jpg" alt="Ha Ha birthday photo placeholder 3"><em>sea &amp; sunshine</em></div>
+      <div class="polaroid photo-d"><span class="tape tape-dot"></span><img src="images/photo-4.jpg" alt="Ha Ha birthday photo placeholder 4"><em>adventures</em></div>
+      <div class="polaroid photo-e"><span class="tape tape-pink"></span><img src="images/photo-5.jpg" alt="Ha Ha birthday photo placeholder 5"><em>the story continues...</em></div>
+      <span class="desk-icon coffee" aria-hidden="true">☕</span>
+      <span class="desk-icon flowers" aria-hidden="true">🌼</span>
+      <span class="desk-icon heart" aria-hidden="true">♡</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="quiz-section" id="quiz">
+      <div class="section-heading">
+        <p class="eyebrow">How well do you know me? · Bạn hiểu mình đến đâu?</p>
+        <h2>A tiny Ha Ha quiz</h2>
+        <p>Find out some fun facts before your birthday note<br><span>Tìm hiểu vài sự thật thú vị trước khi viết lời chúc sinh nhật.</span></p>
+      </div>
+
+      <form id="quizForm" class="quiz-card">
+        <fieldset class="question">
+          <legend><b>1</b><span>Am I a mountain person or an ocean person?<small>Mình theo đạo núi hay đạo biển?</small></span></legend>
+          <label><input type="radio" name="q1" value="mountain" required><span>⛰️ Mountain · Núi</span></label>
+          <label><input type="radio" name="q1" value="ocean"><span>🌊 Ocean · Biển</span></label>
+        </fieldset>
+
+        <fieldset class="question">
+          <legend><b>2</b><span>What is my favourite sport?<small>Môn thể thao yêu thích của mình là gì?</small></span></legend>
+          <label><input type="radio" name="q2" value="running" required><span>🏃 Running · Chạy bộ</span></label>
+          <label><input type="radio" name="q2" value="flying"><span>🪽 Flying · Bay</span></label>
+          <label><input type="radio" name="q2" value="shooting"><span>🎯 Shooting · Bắn súng</span></label>
+          <label><input type="radio" name="q2" value="kayaking"><span>🛶 Kayaking · Chèo kayak</span></label>
+        </fieldset>
+
+        <fieldset class="question">
+          <legend><b>3</b><span>What is my weird superpower?<small>“Siêu năng lực” kỳ lạ của mình là gì?</small></span></legend>
+          <label><input type="radio" name="q3" value="no-blink" required><span>👀 Not blinking for four minutes · Không chớp mắt trong 4 phút</span></label>
+          <label><input type="radio" name="q3" value="sneeze"><span>🤧 Sneezing up to 20 times at once · Hắt hơi đến 20 lần liên tục</span></label>
+          <label><input type="radio" name="q3" value="eyes"><span>🙃 Moving my eyes in opposite directions · Đảo hai mắt về hai hướng ngược nhau</span></label>
+        </fieldset>
+
+        <fieldset class="question">
+          <legend><b>4</b><span>Which hobby that I can keep for a long time?<small>Sở thích mình có thể giữ được lâu nhất là?</small></span></legend>
+          <label><input type="radio" name="q4" value="crochet" required><span>🧶 Crochet · Móc len</span></label>
+          <label><input type="radio" name="q4" value="painting"><span>🎨 Painting · Vẽ tranh</span></label>
+          <label><input type="radio" name="q4" value="baking"><span>🧁 Baking · Làm bánh</span></label>
+          <label><input type="radio" name="q4" value="gardening"><span>🌱 Gardening · Làm vườn</span></label>
+        </fieldset>
+
+        <fieldset class="question">
+          <legend><b>5</b><span>If now I won lottery, where would I go first?<small>Giờ mà trúng số là vác balo đi đâu ngay lập tức nè?</small></span></legend>
+          <label><input type="radio" name="q5" value="korea" required><span>🇰🇷 Travelling to Korea · Du lịch Hàn Quốc</span></label>
+          <label><input type="radio" name="q5" value="mediterranean"><span>🏊 Swimming in the Mediterranean · Bơi ở Địa Trung Hải</span></label>
+          <label><input type="radio" name="q5" value="aurora"><span>✨ Seeing the Northern Lights · Ngắm cực quang Bắc Âu</span></label>
+        </fieldset>
+
+        <button class="primary-button" type="submit">Show my score · Xem điểm</button>
+        <p class="quiz-cue">Check your score, then continue below to write your message.<br><span>Xem điểm rồi cuộn xuống để viết lời chúc nhé.</span> ↓</p>
+      </form>
+
+      <div class="quiz-result hidden" id="quizResult" aria-live="polite">
+        <div class="score-bubble"><strong id="scoreNumber">0/5</strong><span>Your score · Điểm của bạn</span></div>
+        <h3 id="scoreMessage"></h3>
+        <div id="answerReview" class="answer-review"></div>
+        <p class="bonus">🤧 My nose is extremely sensitive! Bonus fact: I can swim for 20 metres.<br><span>Mũi mình cực kỳ nhạy cảm! Fun fact thêm: mình có thể bơi được 20 mét.</span></p>
+        <a href="#birthday-note" class="primary-button continue-button">Continue to leave Ha Ha a birthday note →<small>Tiếp tục viết lời chúc cho Hà Hà</small></a>
+      </div>
+    </section>
+
+    <section class="note-section hidden" id="birthday-note">
+      <div class="note-intro">
+        <p class="eyebrow">Just between us · Chỉ riêng chúng ta</p>
+        <h2>Tell me something lovely</h2>
+        <p>Your answers come only to me. I may share a few favourite wishes later—but never your private details.</p>
+        <p class="vi">Câu trả lời chỉ được gửi riêng cho mình. Sau này mình có thể chia sẻ một vài lời chúc yêu thích, nhưng không chia sẻ thông tin riêng tư của bạn.</p>
+        <div class="shell-note">🐚 Take your time. There are no wrong answers.<br>Cứ từ từ nhé. Không có câu trả lời nào sai cả.</div>
+      </div>
+
+      <form class="wish-form" id="wishForm">
+        <input type="hidden" name="_subject" value="A new birthday wish for Ha Ha!">
+        <input type="hidden" name="_template" value="table">
+        <label><span>Your name · Tên của bạn <em>optional · không bắt buộc</em></span><input name="name" type="text" placeholder="Or stay mysterious... · Hoặc giữ bí mật..."></label>
+        <label><span>How did we meet? · Chúng ta đã gặp nhau như thế nào?</span><textarea name="how_we_met" required rows="3" placeholder="Take me back to the beginning... · Hãy quay lại từ đầu..."></textarea></label>
+        <label><span>What was your first impression of me? · Ấn tượng đầu tiên của bạn về mình?</span><textarea name="first_impression" required rows="3" placeholder="Be honest—I can handle it! · Cứ thật lòng nhé!"></textarea></label>
+        <label><span>A favourite or funny memory of us · Một kỷ niệm vui hoặc đáng nhớ</span><textarea name="memory" rows="3" placeholder="That one moment you still remember..."></textarea></label>
+        <label><span>What would you like us to do together once we meet in the future? · Bạn muốn chúng ta cùng làm gì khi gặp lại nhau trong tương lai?</span><textarea name="future_together" rows="3" placeholder="A trip, a tiny plan, or a big adventure..."></textarea></label>
+        <label><span>Your birthday wish for me 💌 · Lời chúc sinh nhật dành cho mình</span><textarea name="birthday_wish" required rows="4" placeholder="A wish, some wisdom, or a little love..."></textarea></label>
+        <button class="primary-button" type="submit" id="sendWishButton">Seal &amp; send my wish · Gửi lời chúc</button>
+        <div class="form-message hidden" id="formMessage" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="gift-section hidden" id="gifts">
+      <div class="section-heading">
+        <p class="eyebrow">Completely optional · Tùy tâm ko bắt buộc, thoải mái thui</p>
+        <h2>A tiny birthday treat?</h2>
+        <p>Your message is already a lovely gift—there is absolutely no pressure. ♡<br><span>Lời chúc của bạn đã là một món quà ý nghĩa rồi—hoàn toàn không áp lực nhé. ♡</span></p>
+      </div>
+
+      <div class="gift-grid">
+        <article class="gift-card coffee-card">
+          <div class="gift-icon">☕</div><h3>A cup of coffee<br><span>Một ly cà phê</span></h3>
+          <div class="gift-actions">
+            <a href="https://www.paypal.com/ncp/payment/83RGG8YFBH7H2" target="_blank" rel="noopener">Coffee · Cà phê — €3.50</a>
+            <a href="https://www.paypal.com/ncp/payment/62F7PEKJCRG3U" target="_blank" rel="noopener">Matcha — €6</a>
+          </div>
+        </article>
+        <article class="gift-card"><div class="gift-icon">🌷</div><h3>Give me flowers<br><span>Tặng hoa cho mình</span></h3><a href="https://www.paypal.com/ncp/payment/2VJBXM85ZSQSA" target="_blank" rel="noopener">Gift €10 · Tặng €10</a></article>
+        <article class="gift-card"><div class="gift-icon">🎬</div><h3>Movie ticket<br><span>Vé xem phim</span></h3><a href="https://www.paypal.com/ncp/payment/VKLUGZDDE36FE" target="_blank" rel="noopener">Gift €15 · Tặng €15</a></article>
+        <article class="gift-card local-gift"><div class="gift-icon">🏦</div><h3>Vietnamese bank<br><span>Ngân hàng Việt Nam</span></h3><button type="button" class="secondary-button" id="paymentDetailsButton">Vietnamese bank QR<br>QR ngân hàng Việt Nam</button></article>
+      </div>
+
+      <div class="payment-details hidden" id="paymentDetails">
+        <div><h3>Vietnamese bank · Ngân hàng Việt Nam</h3><p>Techcombank QR</p><img src="images/techcombank-qr.jpeg" alt="Techcombank Vietnamese bank payment QR code"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with sea breeze, birthday magic &amp; a little love ♡<br><span>Được làm bằng gió biển, phép màu sinh nhật và một chút yêu thương ♡</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
